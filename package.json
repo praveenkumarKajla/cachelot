@@ -1,21 +1,32 @@
 {
   "name": "cachelot",
-  "version": "1.0.0",
+  "version": "1.1.2",
   "description": "locking based inMemory cache",
-  "main": "dist/index.js",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/praveenkumarKajla/cachelot.git"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "prepare": "npm run build"
   },
+  "keywords": [
+    "mutex",
+    "lock",
+    "in-memory cache",
+    "redis",
+    "lock"
+  ],
   "author": "praveenkumarkajla",
   "license": "ISC",
   "dependencies": {
     "async-mutex": "^0.3.1"
   },
   "devDependencies": {
-    "@types/node": "^15.0.2"
+    "@types/node": "^15.0.2",
+    "typescript": "^4.2.4"
   }
 }

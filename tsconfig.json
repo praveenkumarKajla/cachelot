@@ -3,6 +3,7 @@
     "module": "commonjs",
     "resolveJsonModule": true,
     "esModuleInterop": true,
+    "declaration": true,
     "lib": [
       "esnext"
     ],
@@ -10,13 +11,16 @@
     "noImplicitAny": false,
     "moduleResolution": "node",
     "sourceMap": true,
-    "outDir": "dist",
+    "outDir": "./lib",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "preserveConstEnums": false,
-    "baseUrl": "./src",
   },
   "include": [
     "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "lib",
   ]
 }
