@@ -58,7 +58,7 @@ export class Cache {
     let e: number;
 
     // if d == 0 set to cache's default expiration
-    if (d === DefaultExpiration) {
+    if (!d || d === DefaultExpiration) {
       d = this.defaultExpiration;
     }
     if (d > 0) {
@@ -75,7 +75,7 @@ export class Cache {
     let e: number;
 
     // if d == 0 set to cache's default expiration
-    if (d === DefaultExpiration) {
+    if (!d || d === DefaultExpiration) {
       d = this.defaultExpiration;
     }
     if (d > 0) {
